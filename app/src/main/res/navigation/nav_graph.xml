@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/introFragment">
+
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.myproject.trafficrules.IntroFragment"
+        android:label="fragment_intro"
+        tools:layout="@layout/fragment_intro" >
+        <action
+            android:id="@+id/action_introFragment_to_firstQuestionFragment"
+            app:destination="@id/firstQuestionFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstQuestionFragment"
+        android:name="com.myproject.trafficrules.Question1"
+        android:label="fragment_first_question"
+        tools:layout="@layout/fragment_first_question" >
+        <action
+            android:id="@+id/action_firstQuestionFragment_to_secondQuestionFragment"
+            app:destination="@id/secondQuestionFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_firstQuestionFragment_to_q1correct"
+            app:destination="@id/q1correct"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondQuestionFragment"
+        android:name="com.myproject.trafficrules.Question2"
+        android:label="fragment_second_question"
+        tools:layout="@layout/fragment_second_question" >
+        <action
+            android:id="@+id/action_secondQuestionFragment_to_thirdQuestionFragment"
+            app:destination="@id/thirdQuestionFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_secondQuestionFragment_to_q2correct2"
+            app:destination="@id/q2correct"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdQuestionFragment"
+        android:name="com.myproject.trafficrules.Question3"
+        android:label="fragment_third_question"
+        tools:layout="@layout/fragment_third_question" >
+        <action
+            android:id="@+id/action_thirdQuestionFragment_to_q3correct"
+            app:destination="@id/q3correct"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_thirdQuestionFragment_to_question4"
+            app:destination="@id/question4"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultsFragment"
+        android:name="com.myproject.trafficrules.ResultsFragment"
+        android:label="fragment_results"
+        tools:layout="@layout/fragment_results" />
+    <fragment
+        android:id="@+id/q1correct"
+        android:name="com.myproject.trafficrules.Q1correct"
+        android:label="Q1correct" >
+        <action
+            android:id="@+id/action_q1correct_to_secondQuestionFragment"
+            app:destination="@id/secondQuestionFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/q2correct"
+        android:name="com.myproject.trafficrules.Q2correct"
+        android:label="Q2correct" >
+        <action
+            android:id="@+id/action_q2correct_to_thirdQuestionFragment"
+            app:destination="@id/thirdQuestionFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/q3correct"
+        android:name="com.myproject.trafficrules.Q3correct"
+        android:label="Q3correct" >
+        <action
+            android:id="@+id/action_q3correct_to_question4"
+            app:destination="@id/question4"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/question4"
+        android:name="com.myproject.trafficrules.Question4"
+        android:label="fragment_question4"
+        tools:layout="@layout/fragment_question4" >
+        <action
+            android:id="@+id/action_question4_to_q4correct"
+            app:destination="@id/q4correct"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_question4_to_question5"
+            app:destination="@id/question5"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/q4correct"
+        android:name="com.myproject.trafficrules.Q4correct"
+        android:label="Q4correct" >
+        <action
+            android:id="@+id/action_q4correct_to_question5"
+            app:destination="@id/question5"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/question5"
+        android:name="com.myproject.trafficrules.Question5"
+        android:label="fragment_question5"
+        tools:layout="@layout/fragment_question5" >
+        <action
+            android:id="@+id/action_question5_to_q5correct"
+            app:destination="@id/q5correct"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_question5_to_resultsFragment"
+            app:destination="@id/resultsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/q5correct"
+        android:name="com.myproject.trafficrules.Q5correct"
+        android:label="Q5correct" >
+        <action
+            android:id="@+id/action_q5correct_to_resultsFragment"
+            app:destination="@id/resultsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+</navigation>

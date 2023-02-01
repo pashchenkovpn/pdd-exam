@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="q1a1">Разрешают</string>
+    <string name="q1a2">Разрешают, если стоянка будет короче 15 минут</string>
+    <string name="q1a3">Запрещают</string>
+    <string name="button_text">Следующий \n вопрос</string>
+    <string name="q1_progress">1/5</string>
+    <string name="q2_progress">2/5</string>
+    <string name="q2">На улице жуткая метель, а человек на обочине просит подвезти. Можно ли остановиться в этом месте?</string>
+    <string name="image2_content_description">image2</string>
+    <string name="q2a1">Можно</string>
+    <string name="q2a2">Можно, если пассажир сядет быстро</string>
+    <string name="q2a3">Нельзя</string>
+    <string name="q3">Вы ищете кофейню со вкусными булочками. В каких направлениях можно продолжить поиски?</string>
+    <string name="image3_content_description">image3</string>
+    <string name="q3a1">Только прямо (по А)</string>
+    <string name="q3a2">Только налево (по Б)</string>
+    <string name="q3a3">Налево или в обратном направлении (по Б или В)</string>
+    <string name="q3a4">Прямо или в обратном направлении (по А или В)</string>
+    <string name="q3_progress">3/5</string>
+    <string name="q4">Кто из водителей нарушит Правила, выполняя маневр на этом перекрёстке?</string>
+    <string name="q4a1">Водитель синей машины</string>
+    <string name="q4a2">Водитель зелёной машины</string>
+    <string name="q4a3">Оба нарушают</string>
+    <string name="q4a4">Никто не нарушает</string>
+    <string name="q5">Подъезжая к городскому перекрёстку, вы почти опередили автобус. По какой полосе можно продолжить движение дальше?</string>
+    <string name="q4_progress">4/5</string>
+    <string name="q5_progress">5/5</string>
+    <string name="q5a1">Только по В</string>
+    <string name="q5a2">По Б или В</string>
+    <string name="q5a3">По любой из предложенных</string>
+    <string name="q4a">Хотя на перекрёстке установлен круглый знак 4.1.1 \'\'Движение прямо\'\', зона его действия распространяется на первое - ближайшее пересечение проезжих частей. То есть, до разделительной полосы. Поэтому синий автомобиль при развороте не нарушает Правил. Водитель зелёного автомобиля тоже соблюдает требование знака, однако поворачивает налево из правой полосы, а это - нарушение пункта 8.5 ПДД.</string>
+    <string name="q5a">Хотя в населённых пунктах водители могут выбирать наиболее удобную полосу для движения, при наличии трёх и более попутных полос занимать крайнюю левую разрешено лишь в особых случаях - например, при интенсивном движении или для поворота налево (п. 9.4 ПДД)</string>
+</resources>
